@@ -13,6 +13,11 @@ app.use(body_parser_1.default.json());
 app.get('/', (req, res) => {
     res.send('API is working!');
 });
+app.post('/addSchool', (req, res) => {
+    // You can access the posted data with req.body
+    // Example: const { name, address } = req.body;
+    res.json({ message: 'School added successfully!' });
+});
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
