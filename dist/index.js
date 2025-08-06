@@ -18,6 +18,13 @@ app.post('/addSchool', (req, res) => {
     // Example: const { name, address } = req.body;
     res.json({ message: 'School added successfully!' });
 });
+app.get('/listSchools', (req, res) => {
+    // Example: return a static list for now
+    res.json([
+        { name: 'School A', address: 'Address A' },
+        { name: 'School B', address: 'Address B' }
+    ]);
+});
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
