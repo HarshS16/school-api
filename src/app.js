@@ -1,8 +1,8 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import { db } from './db/connection.js';
-import schoolRoutes from './routes/schools.js';
+import { db } from '../db/connection.js';
+import schoolRoutes from '../routes/schools.js';
 
 const app = express();
 app.use(cors());

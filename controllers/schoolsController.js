@@ -1,4 +1,4 @@
-import { db } from '../db/connection.js';
+import { db } from '../../db/connection.js';
 
 export const addSchool = (req, res) => {
   const { name, address, latitude, longitude } = req.body;
